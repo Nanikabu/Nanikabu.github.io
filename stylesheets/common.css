@@ -1,3 +1,6 @@
+a{
+	text-decoration: none;
+}
 html{
 	min-height: 600px;
 	height: 100%;
@@ -64,43 +67,80 @@ header:after {
 	text-align: center;
 }
 
-nav{
-	width: 20%;
+.nav{
+	width: 250px;
 	height: 80%;
 	top: 0px;
 	position: absolute;
 }
 
-.nav_content{
+.nav_content a{
 	transform: rotate(-10deg);
 	display: block;
 	padding: 20px;
 	margin-left: -8px;
-	border-bottom: 3px solid #ffffff;
 	font-size: 20px;
 	color: #ffffff;
 	background-color: #000000;
 }
 
-.nav_content:first-child{
+.nav_content a:first-of-type{
 	margin-top: 300px;
-	border-top: 2px solid #ffffff;
+	background-color: red;
 }
 
-.nav_sns{
+.nav_content a:nth-of-type(2){
+	background-color: blue;
+}
+
+.nav_content a:nth-of-type(3){
+	background-color: yellow;
+}
+
+.nav_content a:last-of-type{
+	background-color: green;
+}
+
+.nav_sns a{
 	display: block;
 	margin: 10px;
 	padding: 10px;
-	background-color: rgb(195, 141, 251);
+	color: #ffffff;
+}
+
+.nav_sns a:first-of-type{
+	background-color: #55acee;
+}
+
+.nav_sns a:nth-of-type(2){
+	background-color: #333333;
+}
+
+.nav_sns a:nth-of-type(3){
+	background-color: #1A8CCB;
+}
+
+.nav_sns a:last-of-type{
+	background-color: #ff8800;
 }
 
 .main{
-	height: 100px;
+	height: auto;
 	margin-top: -110px;
-	margin-left: 20%;
-	background-color: #8b84c4;
+	overflow: hidden;
 }
 
-.main{
+.main_lefter{
+	float: left;
+	width: 250px;
+}
 
+.main_righter{
+	float: right;
+	width: 100%;
+	margin-left: -250px;
+}
+
+.main_content{
+	background-color: #ffffff;
 }
