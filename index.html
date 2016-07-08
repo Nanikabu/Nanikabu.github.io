@@ -5,6 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="script/quietflow.min.js"></script>
+  <script>
+    $("body").quietflow({
+      theme : "floatingBoxes",
+      specificColors : [
+        "rgba(46, 204, 113, .5)",
+        "rgba(52, 152, 219, .5)",
+        "rgba(231, 76, 60, .5)",
+        "rgba(155, 89, 182, .5)",
+        "rgba(241, 196, 15, .5)"
+      ],
+      boxCount : 500,
+      backgroundCol : "#34495E"
+    })
+  </script>
+
   <link rel="stylesheet" href="stylesheets/common.css">
   <title>NanikabuLOG</title>
 </head>
@@ -12,7 +29,6 @@
   <header>
     <div class="header_content">
       <h1>NanikabuLOG</h1>
-      <p>色々やってます、色々やりたいです</p>
     </div>
   </header>
   <div class="nav">
@@ -30,10 +46,7 @@
     </nav>
   </div>
   <div class="main">
-    <div class="main_lefter"></div>
-    <div class="main_righter">
       <div class="main_content">工事中</div>
-    </div>
   </div>
 </body>
 </html>
