@@ -8,7 +8,8 @@ $(document).ready(function(){
     "rgba(155, 89, 182, .5)",
     "rgba(241, 196, 15, .5)"
   ],
-  boxCount : 100,
+  speed : 50,
+  boxCount : 250,
   backgroundCol : "#34495E"
   })
 })
